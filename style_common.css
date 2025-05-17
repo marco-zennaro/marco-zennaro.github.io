@@ -1,0 +1,239 @@
+/* Zennaro.NET stylesheet */
+/* for header, footer, wrapper and common items */
+
+/* Document */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background-color:#003366;
+  font-family: "Lucida Grande", sans-serif;
+}
+a {
+  color: #ffffff;
+}
+
+/* Screen Elements that adapts with density */
+@media (min-resolution: 2.01dppx) {
+  .header_item {
+    height: 100px;
+    font-size: 2.0em;
+  }
+  .header_item a {
+    padding-top: 20px;
+  }
+  .top_header_item {
+    height: 100px;
+    font-size: 2.4em;
+  }
+  #logo {
+    padding-top: 7px;
+    text-decoration: none;
+    color: #eeeeff;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000044;
+    width: 100%;
+    margin: auto auto;
+    display: inline-block;
+  }
+  #hamburger {
+    padding-top: 0px;
+	  padding-left: 10px;
+  }
+  a#hamburger {
+  	  text-decoration: none;
+  	  color: #eeeeff;
+  	  text-align: left;
+  	  text-shadow: 1px 1px 0px #000044;
+  	  margin: auto auto;
+  	  display: inline-block;
+  }
+  ul.navigation li {
+      text-shadow: 1px 1px 0px #000044;
+  }
+  .content_text_style {
+    font-size: 1.8em;
+  }
+}
+@media (min-resolution: 1.01dppx) and (max-resolution: 2.0dppx) {
+  .header_item {
+    height: 60px;
+    font-size: 1.0em;
+  }
+  .header_item a {
+    padding-top: 20px;
+  }
+  .top_header_item {
+    height: 60px;
+    font-size: 2.5em;
+  }
+  #logo {
+    padding-top: 7px;
+    text-decoration: none;
+    color: #eeeeff;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000044;
+    width: 100%;
+    margin: auto auto;
+    display: inline-block;
+  }
+  #hamburger {
+    padding-top: 7px;
+	  padding-left: 10px;
+  }
+  a#hamburger {
+  	  text-decoration: none;
+  	  color: #eeeeff;
+  	  text-align: left;
+  	  text-shadow: 1px 1px 0px #000044;
+  	  margin: auto auto;
+  	  display: inline-block;
+  }
+  ul.navigation li {
+      text-shadow: 1px 1px 0px #000044;
+  }
+  .content_text_style {
+    font-size: 1.4em;
+  }
+}
+@media (max-resolution: 1dppx) {
+  .header_item {
+    height: 40px;
+    font-size: 1.0em;
+  }
+  .header_item a {
+    padding-top: 11px;
+  }
+  .top_header_item {
+    height: 40px;
+    font-size: 1.6em;
+  }
+  #logo {
+    padding-top: 7px;
+    text-decoration: none;
+    color: #eeeeff;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000044;
+    width: 100%;
+    margin: auto auto;
+    display: inline-block;
+  }
+  #hamburger {
+    padding-top: 2px;
+	  padding-left: 5px;
+  }
+  a#hamburger {
+  	  text-decoration: none;
+  	  color: #eeeeff;
+  	  text-align: left;
+  	  text-shadow: 1px 1px 0px #000044;
+  	  margin: auto auto;
+  	  display: inline-block;
+  }
+  .content_text_style {
+    font-size: 1.2em;
+  }
+}
+
+/* Headers */
+.header {
+  display: block;
+  background-color: #003366;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+ul.navigation {
+  max-width: 937px;
+  margin: 0 auto;
+  vertical-align: top;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  background-color: #003366;
+}
+ul.navigation li {
+  margin: auto;
+  vertical-align: top;
+  text-align: center;
+  background-color: #003366;
+}
+ul.navigation li a {
+text-decoration: none;
+color: #eeeeff;
+text-shadow: 1px 1px 0px #000044;
+}
+ul.navigation li:hover a {
+color: #85C1E9;
+text-shadow: 1px 1px 0px #353535;
+-webkit-transition: color 0.5s;
+}
+/* FULL MENU */
+/* Larger screens (no mobile) - wide */
+@media (min-width:769px) and (min-device-width:812px) {
+  #top_header {
+		display: none;
+	}
+  ul.navigation {
+    display: flex;
+  }
+  ul.navigation li {
+    display: inline-block;
+    max-width: 100px;
+  }
+  ul.navigation li a {
+    display: inline-block;
+  }
+}
+/* MENU HIDDEN */
+/* Larger screens (no mobile) - small, (mobile) - always */
+@media (max-width: 768px), (max-device-width: 812px) {
+  #menu_header {
+		display: none;
+	}
+  #menu_header.open {
+		display: block;
+	}
+  #small_screen {
+	  display: flex;
+  }
+}
+/* tiny screen */
+@media (max-width: 350px) {
+  #logo {
+	  display: none;
+  }
+}
+
+/* Footer */
+#footer_wrapper {
+  display: block;
+  margin: 5px auto;
+  width: 100%;
+  max-width: 936px;
+  font-family: "Lucida Grande", sans-serif;
+  text-decoration: none;
+  color: #eeeeff;
+  font-size: 1.0em;
+  text-align: right;
+}
+#footer {
+  position: relative;
+  top: 20px;
+  clear: both;
+  text-align: right;
+}
+#text_footer {
+  float: left;
+  text-align: left;
+  font-family: "Lucida Grande", sans-serif;
+  color: #dddddd;
+  padding-left: 10px;
+  font-size: 0.6em;
+}
